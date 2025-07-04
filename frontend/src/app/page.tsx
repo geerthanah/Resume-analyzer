@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="max-w-4xl mx-auto mt-20 p-10 bg-white dark:bg-gray-800 rounded-2xl shadow-xl">
-      <h1 className="text-4xl font-bold mb-10 text-center">📄 AI Resume Analyzer</h1>
+      <h1 className="text-4xl font-bold mb-10 text-center"> AI Resume Analyzer</h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         <input
           type="file"
@@ -52,7 +52,7 @@ export default function Home() {
 
       {result && (
         <div className="mt-10 bg-gray-100 dark:bg-gray-700 p-6 rounded-xl">
-          <h2 className="text-2xl font-bold mb-4">🔍 Result</h2>
+          <h2 className="text-2xl font-bold mb-4"> Result</h2>
           <p><strong>Match Score:</strong> {result.match_score}%</p>
           <p><strong>Common Keywords:</strong> {result.common_keywords.join(", ")}</p>
           <p><strong>Missing Keywords:</strong> {result.missing_keywords.join(", ")}</p>
